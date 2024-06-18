@@ -3,11 +3,7 @@ defineProps(["title", "description", "imageUrl"]);
 </script>
 
 <template>
-  <ImageLoader
-    :imageUrl="imageUrl"
-    :backgroundImage="true"
-    backgroundImageStyle="height: 600px"
-  >
+  <ImageLoader :imageUrl="imageUrl" :backgroundImage="true">
     <Container class="container">
       <div class="welcome__body">
         <div class="welcome__text1">

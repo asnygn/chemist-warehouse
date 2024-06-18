@@ -30,7 +30,6 @@ export default {
     <section
       class="bg-image"
       v-bind:style="{ 'background-image': 'url(' + imageUrl + ')' }"
-      :style="backgroundImageStyle"
     >
       <slot></slot>
     </section>
@@ -51,6 +50,7 @@ export default {
 .bg-image {
   position: relative;
   background-color: #ddd;
+  height: 600px;
 }
 .bg-image::before {
   content: "";
@@ -61,11 +61,18 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 .image-loading {
   width: 100%;
   background-color: #ddd;
 }
 .image {
   width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .bg-image {
+    height: 400px;
+  }
 }
 </style>
