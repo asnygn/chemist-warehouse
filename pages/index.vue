@@ -166,7 +166,7 @@ export default {
   margin-right: 80px;
   margin-bottom: 20px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
 }
 .section2__text2 {
@@ -374,7 +374,7 @@ export default {
 .section5__text2 {
   margin-bottom: 40px;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: #595959;
 }
