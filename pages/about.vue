@@ -85,6 +85,7 @@ export default {
 </template>
 
 <style scoped>
+/* Our Story */
 .our-story {
   position: relative;
   padding: 100px 0;
@@ -110,6 +111,7 @@ export default {
   color: #272727;
 }
 
+/* Our Team */
 .our-team {
   position: relative;
   margin-bottom: 100px;
@@ -126,7 +128,6 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem 4rem;
 }
-
 .team-member__image {
   margin-bottom: 30px;
 }

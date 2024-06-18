@@ -116,7 +116,7 @@ export default {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 890px) {
   /* Main Menu */
   .main-menu {
     position: absolute;
