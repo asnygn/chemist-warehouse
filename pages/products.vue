@@ -94,4 +94,16 @@ export default {
   color: #7a7a7a;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 860px) {
+  .product {
+    display: block;
+  }
+  .product__number {
+    margin-bottom: 20px;
+  }
+  .product__description {
+    margin-bottom: 20px;
+  }
+}
 </style>

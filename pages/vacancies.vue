@@ -111,4 +111,25 @@ export default {
   padding-left: 80px;
   border-left: 2px solid #e2e2e2;
 }
+
+@media screen and (max-width: 780px) {
+  .timeline {
+    display: block;
+  }
+  .timeline__date {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e2e2;
+  }
+  .timeline__title {
+    margin-bottom: 20px;
+  }
+  .timeline__deadline {
+    margin-bottom: 20px;
+  }
+  .timeline__content-layout {
+    padding-left: 0;
+    border: none;
+  }
+}
 </style>

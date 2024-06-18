@@ -151,4 +151,19 @@ export default {
   font-weight: 400;
   color: #7a7a7a;
 }
+
+@media screen and (max-width: 860px) {
+  .our-story__body {
+    display: block;
+  }
+  .our-team__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .our-team__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>

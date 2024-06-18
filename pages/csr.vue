@@ -57,6 +57,9 @@ export default {
           {{ timelineDate(item.date) }}
         </div>
         <div class="timeline__content-layout">
+          <div class="timeline__image-m">
+            <img :src="item.coverImage" />
+          </div>
           <div class="timeline__title">
             {{ item.title }}
           </div>
@@ -101,5 +104,38 @@ export default {
   padding-left: 80px;
   padding-right: 60px;
   border-left: 2px solid #e2e2e2;
+}
+.timeline__image-m {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .timeline__image-m {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .timeline__image {
+    display: none;
+  }
+  .timeline__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .timeline {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .timeline__date {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e2e2;
+  }
+  .timeline__content-layout {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
 }
 </style>
