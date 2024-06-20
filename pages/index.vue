@@ -14,7 +14,7 @@ export default {
       this.loading = true;
       try {
         const response = await axios.post(
-          "https://cw-api.zino.tech/homepage/list"
+          "https://api.chemistwarehouse.org/homepage/list"
         );
         this.data = response.data;
       } catch (err) {

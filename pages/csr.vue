@@ -14,7 +14,9 @@ export default {
     async fetchData() {
       this.loading = true;
       try {
-        const response = await axios.post("https://cw-api.zino.tech/csr/list");
+        const response = await axios.post(
+          "https://api.chemistwarehouse.org/csr/list"
+        );
         this.data = response.data;
       } catch (err) {
         this.error = true;
