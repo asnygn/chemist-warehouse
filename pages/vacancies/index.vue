@@ -1,6 +1,6 @@
 <script>
 import axios from "axios";
-import { format, formatISO, parseISO, parse } from "date-fns";
+import { format } from "date-fns";
 
 export default {
   data() {
@@ -64,7 +64,7 @@ export default {
         </div>
         <div class="timeline__content-layout">
           <div class="timeline__title">
-            {{ item.title }}
+            <NuxtLink :to="'/vacancies/' + item._id">{{ item.title }}</NuxtLink>
           </div>
           <div class="timeline__deadline">
             {{ deadlineDate(item.deadline) }}
@@ -98,6 +98,13 @@ export default {
   min-width: 220px;
   margin-bottom: 40px;
   font-size: 25px;
+}
+.timeline__title a {
+  color: #000;
+  text-decoration: none;
+}
+.timeline__title a:hover {
+  color: var(--primary-color);
 }
 .timeline__deadline {
   margin-bottom: 40px;
