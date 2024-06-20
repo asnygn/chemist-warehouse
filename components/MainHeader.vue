@@ -99,7 +99,7 @@ export default {
 }
 .main-menu a:hover,
 .main-menu .router-link-exact-active {
-  color: var(--menu-active-color);
+  color: var(--primary-color);
 }
 
 /* Burger */
