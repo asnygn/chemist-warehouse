@@ -58,21 +58,17 @@ export default {
   <!-- Vancancies Timeline -->
   <section class="vacancies-timeline" v-if="data && data?.list">
     <Container>
-      <div class="timeline" v-for="item in data?.list">
-        <div class="timeline__date">
-          {{ timelineDate(item.deadline) }}
-        </div>
-        <div class="timeline__content-layout">
-          <div class="timeline__title">
-            <NuxtLink :to="'/vacancies/' + item._id">{{ item.title }}</NuxtLink>
-          </div>
-          <div class="timeline__deadline">
-            {{ deadlineDate(item.deadline) }}
-          </div>
-          <div class="timeline__description">
-            {{ item.shortDescription }}
-          </div>
-        </div>
+      <div id='jobnet' style='border:1px solid silver;width:100%;padding-left:1px;padding-right:1px;'>
+        <object data='https://www.jobnet.com.mm/embed/WJU5jJKbXSRtvmaG93W88w%3d%3d' frameborder ='0' width='100%' height ='750' scrolling ='yes' seamless='seamless' title='loading'>
+          <embed data='https://www.jobnet.com.mm/embed/WJU5jJKbXSRtvmaG93W88w%3d%3d' frameborder ='0' width='100%' height ='750' scrolling ='yes' seamless='seamless' title='loading'></embed>
+        </object>
+      </div>
+      <div style='border-top: 1px #ddd solid;margin-top:-2px;'>
+        <a href='https://www.jobnet.com.mm/' target='_blank'>
+          <span style='display: table-footer-group;'></span>
+          <span style='float: left;padding-right: 5px;font-size: 12px;line-height: 2.3;'>Powered by</span>
+          <img src='https://www.jobnet.com.mm/img/small-logo.png'/>
+        </a>
       </div>
     </Container>
   </section>

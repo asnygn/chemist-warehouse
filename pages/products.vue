@@ -75,6 +75,7 @@ export default {
 
 .product {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 .product .product__layout:first-child {
@@ -104,6 +105,12 @@ export default {
   }
   .product__description {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .product__image img {
+    width: 100%;
   }
 }
 </style>
