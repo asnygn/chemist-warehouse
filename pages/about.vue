@@ -55,10 +55,17 @@ export default {
           {{ data?.list?.[0].ourStoryBlack }}
         </div>
       </div>
+      <div class="our-story__about-photo">
+        <ImageLoader
+          :imageUrl="data?.list?.[0].aboutPhoto"
+          loadingStyle="height:200px;border-radius: 10px"
+        />
+      </div>
+      <div class="our-story__about-text">{{ data?.list?.[0].aboutText }}</div>
     </Container>
   </section>
   <!-- Meet Our Team -->
-  <section class="our-team" v-if="data && data?.list?.[0].team">
+  <!-- <section class="our-team" v-if="data && data?.list?.[0].team">
     <Container>
       <div class="our-team__title">
         <p>Meet our team</p>
@@ -79,7 +86,7 @@ export default {
         </div>
       </div>
     </Container>
-  </section>
+  </section> -->
   <!-- Main Footer -->
   <MainFooter v-if="data" />
 </template>
@@ -149,6 +156,14 @@ export default {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
+  color: #7a7a7a;
+}
+.our-story__about-photo {
+  margin-top: 100px;
+}
+.our-story__about-text {
+  padding: 0 40px;
+  margin-top: 40px;
   color: #7a7a7a;
 }
 
