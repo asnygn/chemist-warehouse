@@ -170,6 +170,13 @@ export default {
   color: #7a7a7a;
 }
 
+@media screen and (max-width: 980px) {
+  .our-story__about-photo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .our-story__body {
     display: block;
