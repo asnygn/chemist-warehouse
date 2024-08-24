@@ -60,8 +60,8 @@ export default {
           :imageUrl="data?.list?.[0].aboutPhoto"
           loadingStyle="height:200px;border-radius: 10px"
         />
+        <div class="our-story__about-text">{{ data?.list?.[0].aboutText }}</div>
       </div>
-      <div class="our-story__about-text">{{ data?.list?.[0].aboutText }}</div>
     </Container>
   </section>
   <!-- Meet Our Team -->
@@ -160,10 +160,13 @@ export default {
 }
 .our-story__about-photo {
   margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .our-story__about-text {
   padding: 0 40px;
   margin-top: 40px;
+  line-height: 1.5;
   color: #7a7a7a;
 }
 
