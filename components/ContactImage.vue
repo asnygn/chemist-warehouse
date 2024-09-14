@@ -21,7 +21,7 @@ export default {
           <p>Have any inquiries? Please feel free to contact us anytime.</p>
         </div>
         <div class="contact__link">
-          <a href="#" @click="scrollToElement">Contact us now</a>
+          <a @click="scrollToElement">Contact us now</a>
         </div>
       </div>
     </Container>
@@ -55,5 +55,6 @@ export default {
   background-color: #56c512;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 </style>
