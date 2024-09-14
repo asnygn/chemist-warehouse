@@ -69,12 +69,8 @@ async function submitContact() {
   <!-- Main Header -->
   <MainHeader />
   <!-- Welcome Image -->
-  <WelcomeImage
-    title="Contact Us"
-    description="Fusce id vehicula leo, nec accumsan lacus Praesent a dictum libero. Duis efficitur sem non nisi sodales"
-    imageUrl="/image/about.jpg"
-  />
-  <section class="contact-us">
+  <ContactImage imageUrl="/image/about.jpg" />
+  <section id="contact-us" class="contact-us">
     <Container>
       <div class="contact-us__title">Contact Us</div>
       <form class="contact-form" @submit.prevent="submitContact">
