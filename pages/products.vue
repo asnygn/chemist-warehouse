@@ -52,9 +52,7 @@ export default {
             {{ String(++index).padStart(2, 0) }}.
           </div>
           <div class="product__title">{{ product.title }}</div>
-          <div class="product__description">
-            {{ product.description }}
-          </div>
+          <div class="product__description" v-html="product.description"></div>
         </div>
         <div class="product__layout">
           <div class="product__image">
