@@ -30,6 +30,37 @@
                 <p>saleandmarketing@chemistwarehouse.org</p>
               </div>
             </div>
+            <div class="main-footer__social">
+              <div>
+                <a
+                  href="https://www.facebook.com/ChemistWarehouseCompany?mibextid=ZbWKwL"
+                  target="_blank"
+                >
+                  <img src="/assets/svg/facebook.svg" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="https://t.me/ChemistWarhouse" target="_blank">
+                  <img src="/assets/svg/telegram.svg" alt="" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://instagram.com/chemistwarehouseco.ltd?igshid=ZDdkNTZiNTM="
+                  target="_blank"
+                >
+                  <img src="/assets/svg/instagram.svg" alt="" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://invite.viber.com/?g2=AQBJbkwuklUYS0527aSRXBsWM2iUrSVeVPeeygn1o23Vb%2FHLcQGMl4BA28VzIwOF"
+                  target="_blank"
+                >
+                  <img src="/assets/svg/viber.svg" alt="" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="main-footer__block">
@@ -120,6 +151,13 @@
 .main-footer__other-address > div,
 .main-footer__menu > div {
   margin-bottom: 10px;
+}
+.main-footer__social {
+  margin-top: 10px;
+}
+.main-footer__social div {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 860px) {
